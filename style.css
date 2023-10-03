@@ -1,0 +1,194 @@
+html, body, h1, h2, h3, p, ol, li, a {
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+
+body {
+	padding: 0px 0px 0px 0px;
+	background: #dddddd; /* gray */
+	background-image: url(images/background.png);
+	background-size: 7%;
+}
+
+h1 {
+	margin: 10px 0px 15px 0px;
+	text-align: center;
+}
+
+h2 {
+	margin: 10px 0px 20px 0px;
+	color: #7facaa; /* green */
+	text-align: center;
+}
+
+h3 {
+	margin: 15px 0px 15px 0px;
+	/* bottom border for h3 ingredients */
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 3px;
+}
+
+ul, ol {
+	padding: 0px 0px 0px 50px;
+}
+
+/* setting padding 50px to ul (see above)
+ * move nav bar too, let's move nav  bar
+ * to the left
+ */
+ .nav {
+	padding-left: 0px;
+}
+
+.nav a {
+	color: #ffffff; /* white */
+	text-decoration: none; /* remove underscores */
+}
+/* set nav bar list items orizontally
+ * this rule does not affect other li
+ * tag in our site
+ * */
+.nav li{
+	display: inline;
+}
+
+/* Add here style for recipes' list */
+.recipes {
+	list-style-type: none; /* remove bullet points in recipes' list */
+	padding: 0px; /* remove padding (left) for li items */
+}
+.recipes li {
+	border: 1px solid #b56663; /* Add a little border for li items */
+	padding-left: 0px; /* remove padding left for li photo in recipes.html */
+}
+.recipes h3 {
+	border-bottom: 0px; /* remove bottom border, we used it for ingredients/directions */
+}
+.recipes a {
+	color: #7facaa;
+	text-decoration: none;
+}
+
+.header {
+	padding: 10px 10px 10px 10px;
+	background-color: #b56663; /* red */
+}
+
+.header h1 {
+	color: #ffffff; /* white */
+}
+
+.header h3 {
+	border-bottom: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+/* img is an inline level tag
+ * we can't use text-aling so
+ * let's make it a block  tag
+ * and then use  margin  auto
+ */
+.header img {
+	display: block;
+	margin: 0px auto 0px auto;
+	width: 500px;
+}
+
+.main-content {
+	width: 1000px; /* fixed size */
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #dddddd; /* gray */
+	margin: 30px auto 0px auto;
+	background: #ffffff; /* white */
+}
+
+.photos li {
+	display: inline;
+}
+
+.featured-image {
+	background: #ffffff;
+	background-image: url(images/featured-image.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	margin: 25px auto 25px auto;
+	width: 720px;
+	height: 400px;
+	border: 1px solid #b56663;
+}
+
+.featured-image h3 {
+	margin: 0px;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 1px solid #b56663;
+}
+
+.featured-image a {
+	text-decoration: none;
+	color: #7facaa;
+}
+
+.recipes img {
+	float: left;
+	width: 70px;
+	height: 70px;
+	padding-right: 10px;
+}
+
+label, input {
+	display: block;
+}
+
+label {
+	margin-bottom: 10px;
+	width: 500px;
+}
+
+input {
+	width: 500px;
+	margin-bottom: 25px;
+}
+
+/* attribute selector */
+input[type=submit] {
+	width: 250px;
+	font-size: 30px;
+}
+
+input[type=text] {
+	border: 2px solid #7facaa;
+	font-size: 24px;
+	padding: 7px;
+}
+
+textarea {
+	width: 500px;
+	height: 400px;
+	padding: 7px;
+	border: 2px solid #7facaa;
+	margin-bottom: 25px;
+	font-size: 24px;
+}
+
+/* we set label and input as block-level tag
+ * but in this case  we  wanna have checkbox
+ * and its label on the  same row, let's set
+ * as inline tags
+ */
+input[type="checkbox"], label[for="newsletter"] {
+	display: inline;
+}
+
+input[type="checkbox"] {
+	width: 20px;
+}
+
+#suggest {
+	width: 500px;
+	margin: 0px auto 0px auto;
+}
